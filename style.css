@@ -37,30 +37,30 @@ backdrop-filter:blur(18px);
 border-bottom:1px solid rgba(255,255,255,.05);
 
 box-shadow:
-    0 0 30px rgba(59,130,246,.08);
+0 0 30px rgba(59,130,246,.08);
 
 z-index:1000;
 
 }
 
 nav::after{
-    content:"";
+content:"";
 
-    position:absolute;
+position:absolute;
 
-    left:0;
-    top:100%;
+left:0;
+top:100%;
 
-    width:100%;
-    height:80px;
+width:100%;
+height:80px;
 
-    pointer-events:none;
+pointer-events:none;
 
-    background:linear-gradient(
-        to bottom,
-        rgba(15,23,42,.35),
-        rgba(15,23,42,0)
-    );
+background:linear-gradient(
+to bottom,
+rgba(15,23,42,.35),
+rgba(15,23,42,0)
+);
 }
 
 .logo{
@@ -74,24 +74,24 @@ font-weight:700;
 }
 
 .astra-star{
-    color:#FFD54A;
-    font-size:1.4rem;
+color:#FFD54A;
+font-size:1.4rem;
 
-    text-shadow:
-        0 0 10px rgba(255,213,74,.9),
-        0 0 20px rgba(255,213,74,.5);
+text-shadow:
+0 0 10px rgba(255,213,74,.9),
+0 0 20px rgba(255,213,74,.5);
 
-    animation:twinkle 3s infinite ease-in-out;
+animation:twinkle 3s infinite ease-in-out;
 }
 
 @keyframes twinkle{
-    0%,100%{
-        opacity:1;
-    }
+0%,100%{
+opacity:1;
+}
 
-    50%{
-        opacity:.6;
-    }
+50%{
+opacity:.6;
+}
 }
 
 nav ul{
@@ -107,7 +107,7 @@ transition:.3s;
 }
 
 nav a:hover{
-    color:#FFD54A;
+color:#FFD54A;
 }
 /* HERO */
 
@@ -124,27 +124,27 @@ padding:20px;
 
 background:
 radial-gradient(
-    circle at top,
-    rgba(59,130,246,.25),
-    transparent 40%
+circle at top,
+rgba(59,130,246,.25),
+transparent 40%
 ),
 linear-gradient(
-    135deg,
-    #0f172a,
-    #1e293b,
-    #312e81
+135deg,
+#0f172a,
+#1e293b,
+#312e81
 );
 
 }
 
 .hero-content{
-    max-width:900px;
-    width:100%;
-    margin:auto;
+max-width:900px;
+width:100%;
+margin:auto;
 }
 
 .hero h1{
-    font-size:clamp(2.5rem, 8vw, 4rem);
+font-size:clamp(2.5rem, 8vw, 4rem);
 }
 
 .hero p{
@@ -156,10 +156,10 @@ margin-bottom:35px;
 }
 
 .guarantee{
-    margin-top:20px;
-    color:#FFD54A;
-    font-weight:600;
-    font-size:1.1rem;
+margin-top:20px;
+color:#FFD54A;
+font-weight:600;
+font-size:1.1rem;
 }
 
 .buttons{
@@ -261,7 +261,7 @@ gap:30px;
 }
 
 .contact-heading{
-margin-top:100px;    
+margin-top:100px;
 }
 
 .price-card{
@@ -321,23 +321,23 @@ margin:12px 0;
 }
 
 .plan-btn{
-    display:block;
-    width:100%;
-    margin-top:20px;
-    padding:12px;
+display:block;
+width:100%;
+margin-top:20px;
+padding:12px;
 
-    background:#FFD54A;
-    color:#111827;
+background:#FFD54A;
+color:#111827;
 
-    text-decoration:none;
-    text-align:center;
+text-decoration:none;
+text-align:center;
 
-    border-radius:10px;
-    font-weight:bold;
+border-radius:10px;
+font-weight:bold;
 }
 
 .plan-btn:hover{
-    transform:translateY(-2px);
+transform:translateY(-2px);
 }
 
 
@@ -377,14 +377,109 @@ display:block;
 padding:20px;
 }
 
+.portfolio-tagline{
+text-align:center;
+color:#FFD54A;
+
+font-size:1.1rem;
+font-weight:600;
+
+margin-top:-25px;
+margin-bottom:50px;
+}
+
 /* CONTACT */
 
 #contact{
 text-align:center;
 }
 
-#contact p{
-margin-bottom:25px;
+.contact-tagline{
+text-align:center;
+color:#FFD54A;
+
+font-size:1.1rem;
+font-weight:600;
+
+margin-top:-25px;
+margin-bottom:50px;
+}
+
+.email-display{
+display:inline-block;
+
+color:#FFD54A;
+
+font-size:1.3rem;
+font-weight:600;
+
+text-decoration:none;
+
+padding:12px 20px;
+
+border:1px solid rgba(255,213,74,.3);
+border-radius:12px;
+
+transition:.3s;
+}
+
+.email-display:hover{
+transform:translateY(-2px);
+
+background:rgba(255,213,74,.08);
+
+border-color:rgba(255,213,74,.5);
+}
+
+.contact-form{
+max-width:600px;
+margin:40px auto;
+
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+background:#1e293b;
+
+color:white;
+
+font-size:1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+color:rgba(255,255,255,.5);
+}
+
+.contact-form button{
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+background:#FFD54A;
+
+color:#111827;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.contact-form button:hover{
+transform:translateY(-2px);
 }
 
 /* FOOTER */
@@ -402,45 +497,45 @@ opacity:.8;
 
 
 nav{
-    flex-direction:column;
-    gap:12px;
-    padding:15px 5%;
+flex-direction:column;
+gap:12px;
+padding:15px 5%;
 }
 
 .logo{
-        font-size:1.2rem;
-        text-align:center;
+font-size:1.2rem;
+text-align:center;
 }
 
 nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
 }
 
 .hero h1{
-    font-size:2.6rem;
+font-size:2.6rem;
 }
 
 .buttons{
-    flex-direction:column;
+flex-direction:column;
 }
 
 
 }
 
 #services{
-    background:#111827;
+background:#111827;
 }
 
 #pricing{
-    background:#0f172a;
+background:#0f172a;
 }
 
 #portfolio{
-    background:#111827;
+background:#111827;
 }
 
 #contact{
-    background:#0f172a;
+background:#0f172a;
 }
