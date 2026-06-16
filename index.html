@@ -46,6 +46,58 @@
 
 </section>
 
+<section class="process-section">
+
+    <div class="sticky-graphic">
+        <div class="laptop">
+            <div class="screen">
+                <span>Astra Studios</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="process-steps">
+
+        <div class="step">
+            <h2>01</h2>
+            <h3>You Ask</h3>
+
+            <p>
+                Tell us about your restaurant cafe or business.
+            </p>
+        </div>
+
+        <div class="step">
+            <h2>02</h2>
+            <h3>We Build</h3>
+
+            <p>
+                We create a custom website preview tailored to your brand.
+            </p>
+        </div>
+
+        <div class="step">
+            <h2>03</h2>
+            <h3>You Approve</h3>
+
+            <p>
+                Request changes until it feels right.
+            </p>
+        </div>
+
+        <div class="step">
+            <h2>04</h2>
+            <h3>You Pay</h3>
+
+            <p>
+                Only after you are satisfied with the final result.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
 <section id="services">
 
     <h2>What We Offer for You</h2>
@@ -210,6 +262,24 @@
     <p>Astra Studios • Websites for Restaurants & Local Businesses</p>
 
 </footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+        else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+document.querySelectorAll('.card, .price-card, .project').forEach(el => {
+    el.classList.add('hidden');
+    observer.observe(el);
+});
+</script>
 
 </body>
 </html>
